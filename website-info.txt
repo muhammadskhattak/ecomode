@@ -1,0 +1,52 @@
+What is Ecomode?
+- Sustainability fashion initiative
+- End goal: make a fashion show (next year)
+- Check business plan
+- Sustainable: repurposing used clothes, perhaps donations of old stuff, designers 
+free to do what they want, auctioning pieces
+- About $10/piece, hanging up sustainable art
+- One core event for now, perhaps minor showcases
+
+What does the website need to do? 
+- Needs to provide information for recruiment (volunteers, designers)
+- Apply through the website
+- March/April - Event planning, buy tickets, showcasing
+- Business plan(subjective and stuff, for potential sponsors), want this to look good
+
+The Team:
+- Helen: President
+- Julie: Vice President
+- Treasurer - TBD
+Check drive
+
+Time-span: 1-2 months
+
+What we need:
+- Someone to communicate with for website appearance
+
+First Release:
+- An about us page
+- Need to be able to recruit designers
+- Handle team positions
+- Would prefer to have application process done in  the website, google forms ok if 
+not possible in time frame
+- Would like information to be seen by executives
+- Business strategy on website
+- Mobile version
+
+Panels:
+- Home
+- About us
+- Join us
+    - Deadlines:
+    - Application:
+    - Positions
+- Business Strategy/Future
+= Our Team
+- Contact Us
+    - Team contact
+
+- Static image background
+
+Some Inspiration:
+https://www.projecttrashion.com/tickets
