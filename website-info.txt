@@ -50,3 +50,5 @@ Panels:
 
 Some Inspiration:
 https://www.projecttrashion.com/tickets
+
+Try using bootstrap
