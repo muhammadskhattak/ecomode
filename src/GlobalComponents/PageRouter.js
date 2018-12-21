@@ -4,6 +4,8 @@ import App from '../App/App';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Signup from '../Signup/Signup';
+import Strategy from '../Strategy/Strategy';
+import Tickets from '../Tickets/Tickets';
 import PathNotFound from './PathNotFound';
 
 const routing = (props) => {
@@ -15,6 +17,8 @@ const routing = (props) => {
                     <Route path="/home" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/signup" component={Signup} />
+                    <Route path="/strategy" component={Strategy} />
+                    <Route path="/tickets" component={Tickets} />
                     <Route component={PathNotFound} />
                 </Switch>
             </div>

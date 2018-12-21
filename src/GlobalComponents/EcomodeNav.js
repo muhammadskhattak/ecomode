@@ -30,7 +30,13 @@ export default class EcomodeNav extends React.Component {
                 <NavItem>
                   <NavLink href="/signup">Sign Up</NavLink>
                 </NavItem>
-                <UncontrolledDropdown nav inNavbar>
+                <NavItem>
+                  <NavLink href="/strategy">Business Strategy</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/tickets">Buying Tickets</NavLink>
+                </NavItem>
+                {/* <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     More Information
                   </DropdownToggle>
@@ -46,7 +52,7 @@ export default class EcomodeNav extends React.Component {
                       Reset
                     </DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown> */}
               </Nav>
             </Collapse>
           </Navbar>
