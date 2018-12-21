@@ -1,5 +1,6 @@
 import React from 'react';
 import EcomodeNav from './EcomodeNav';
+import '../Stylesheets/App.css';
 
 const pathNotFound = (props) => {
     return (
