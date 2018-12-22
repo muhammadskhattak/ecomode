@@ -11,24 +11,12 @@
   background-color: #FFFFFF;
 }
 
-.EcomodeHeader {
-  top: 25%; 
-  position: relative;
-  z-index: 100;
-}
-
-.Ecomodeh1 {
-  font-family: Arial;
-  font-size: 24pt;
-  z-index: 100;
-}
-
 .CardContainer {
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 10%;
@@ -50,26 +38,98 @@
 }
 
 .CardTitle {
-  font-family:Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-;
-  font-size: 3.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
   color: #1e1e1e;
   padding: 0.5em;
 }
 .CardSubtitle {
-  font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-;
-  font-size: 1.75em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   padding: 0.75em;
   color: #6b6b6b;
 }
 .CardText{
-  font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-;
-  font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   padding: 0.75em;
   color: #1e1e1e;
 }
+
 .CardButton {
-  font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-;
-  font-size: 1.25em;
-  background-color: #1e1e1e;
-  color: #e7e7e7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: #DCDCDC;
+  color: #6b6b6b;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;  
+}
+
+.headerHome{
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding-top: 8px;
+}
+
+@media screen and (max-width: 720px) {
+  .CardContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    box-shadow: 6px 6px 10px 2px rgba(0,0,0,0.1);
+  }
+  
+  .Card{
+    padding-top: 3em;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .CardTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #1e1e1e;
+    padding: 0.5em;
+  }
+
+  .CardSubtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0.75em;
+    color: #6b6b6b;
+  }
+
+  .CardText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 0.75em;
+    color: #1e1e1e;
+  }
+  
+  .CardButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: none;
+    background-color: #DCDCDC;
+    color: #6b6b6b;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;    
+  }
+  
 }
