@@ -5,11 +5,15 @@ import '../Stylesheets/App.css';
 import { Parallax } from 'react-parallax';
 import { MediaQuery } from 'react-responsive';
 import EcomodeNav from '../GlobalComponents/EcomodeNav';
+import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 
 
 const home = (props) => {
   return (
     <div>
+        {/* <div className="EcomodeHeader text-center">
+          <h1 className="Ecomodeh1">ECOMODE</h1>
+        </div> */}
         <Parallax blur={0}
                   bgImage={banner}
                   bgImageAlt="Photo from one of our photoshoots. Woman wearing red \
@@ -19,15 +23,38 @@ const home = (props) => {
                   <EcomodeNav />
                   <div style={{
                     minWidth:800,
-                    height:'100%',
+                    height:'1000px',
                     minHeight:800,
                     // width:'100%'
                     paddingTop:"57.25%"
                   }} />
               </Parallax>
-          {/* <div style={{height:'1000px'}} /> */}
-          <h1 className='header'>What is Ecomode?</h1>
-          <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis, lorem sed rhoncus eleifend, arcu felis sodales justo, nec sollicitudin eros nibh eu ex. Ut tortor ex, malesuada sed dapibus eget, iaculis id urna. Cras cursus purus non arcu molestie pharetra. Duis eu condimentum magna. Donec pulvinar neque lacus, eu placerat elit euismod a. Nam pulvinar ex id tellus posuere, sed vehicula nisi facilisis. Ut at vulputate augue. Sed id eros porttitor, dapibus enim semper, euismod eros. Aenean urna lectus, tincidunt eu lacus et, volutpat semper libero. Vivamus congue malesuada pharetra. Donec neque felis, bibendum ut risus vel, placerat pretium ligula. Nunc sagittis in nisi eu fringilla. Vivamus urna nulla, fringilla feugiat tortor eu, eleifend commodo nisl. Ut convallis orci sed magna ullamcorper, in dictum metus tincidunt. Suspendisse eget dictum sem, vel consequat dui. Suspendisse sodales urna lorem, id fringilla leo euismod nec.</p>
+        <div className="CardContainer">
+          <Card body inverse style={{backgroundColor: "#FFFFFF", borderColor: "#DCDCDC"}}>
+            {/* <CardImg className="CardImage text-center" src={banner}/> This is how one would insert image into a card */}
+            <CardBody className="CardBody">
+              <CardTitle className="CardTitle text-center"> What is Ecomode? </CardTitle>
+              <CardSubtitle className="CardSubtitle text-center">Some subtitle text</CardSubtitle>
+              <CardText className="CardText text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc eget lorem dolor sed. 
+                Vitae nunc sed velit dignissim sodales. Nunc consequat interdum varius sit amet mattis 
+                vulputate enim nulla. Auctor augue mauris augue neque gravida. Morbi tristique senectus 
+                et netus et malesuada fames ac. Posuere lorem ipsum dolor sit amet. Erat nam at lectus 
+                urna duis convallis convallis tellus id. Amet mattis vulputate enim nulla aliquet porttitor 
+                lacus. Turpis massa tincidunt dui ut. Et sollicitudin ac orci phasellus. Eleifend mi in 
+                nulla posuere sollicitudin. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Tempus 
+                imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Venenatis a condimentum 
+                vitae sapien pellentesque habitant. Rhoncus aenean vel elit scelerisque mauris pellentesque 
+                pulvinar pellentesque habitant.
+              </CardText>
+              {/* <Button className="CardButton text-center">This is some clickable button that doesn't do anything</Button> */}
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{height:'1000px'}} />
+          {/* <h1 className='header'>What is Ecomode?</h1>
+          <p className='paragraph'></p> */}
     </div>
   );
 };
