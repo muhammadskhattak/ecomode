@@ -6,3 +6,12 @@
   text-align:center;
   width: 80px;
 }
+
+.headerHome{
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding-top: 8px;
+}
