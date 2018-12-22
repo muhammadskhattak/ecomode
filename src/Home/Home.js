@@ -11,17 +11,6 @@ const home = (props) => {
   return (
     <div>
         <EcomodeNav />
-        {/* <img src={banner} style={{textAlign:"center"}}/> */}
-        {/* <Parallax blur={0}
-            bgImage={banner}
-            bgImageAlt="Poster for Ecomode"
-            strength={300} >
-          <div style={{
-            minWidth:1181,
-            height:'100%',
-            minHeight:1574,
-            width:'100%'
-          }} /> */}
         <Parallax
              bgImage={banner}
              bgImageAlt="Poster for Ecomode. "
@@ -31,7 +20,6 @@ const home = (props) => {
             minWidth:800,
             height:'100%',
             minHeight:800,
-            // width:'100%'
             paddingTop:"57.25%"
             }} />
           </Parallax>
@@ -52,7 +40,6 @@ const home = (props) => {
             </CardBody>
           </Card>
         </div>
-        <div style={{height:'1000px'}} />
     </div>
   );
 };
