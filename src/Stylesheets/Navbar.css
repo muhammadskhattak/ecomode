@@ -11,3 +11,31 @@
   color: solid #000;
   opacity: 1;
 }
+
+.pageHeader{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.homeLink:link{
+  text-decoration: none;
+  color: black;
+}
+
+.homeLink:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.homeLink:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.homeLink:active{
+  text-decoration: none;
+  color: black;
+}

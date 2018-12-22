@@ -10,26 +10,6 @@ import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from
 const home = (props) => {
   return (
     <div>
-        {/* <div className="EcomodeHeader text-center">
-          <h1 className="Ecomodeh1">ECOMODE</h1>
-        </div> */}
-        {/* <Parallax blur={0}
-                  bgImage={banner}
-                  bgImageAlt="Photo from one of our photoshoots. Woman wearing red \
-                  wool sweater and holding a leaf."
-                  strength={300}
-                  className="img-fluid">
-                  <EcomodeNav />
-                  <div style={{
-                    minWidth:800,
-                    height:'1000px',
-                    minHeight:800,
-                    // width:'100%'
-                    paddingTop:"57.25%"
-                  }} />
-              </Parallax> */}
-          {/* <h1 className='header'>What is Ecomode?</h1>
-          <p className='paragraph'></p> */}
         <EcomodeNav />
         {/* <img src={banner} style={{textAlign:"center"}}/> */}
         {/* <Parallax blur={0}
