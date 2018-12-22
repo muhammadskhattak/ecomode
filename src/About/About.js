@@ -1,8 +1,8 @@
 import React from 'react';
 import EcomodeNav from '../GlobalComponents/EcomodeNav';
-// import '../Stylesheets/App.css'
-import '../Stylesheets/Home.css'
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import '../Stylesheets/App.css';
+import '../Stylesheets/Card.css';
+import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
 
 const about = (props) => {
   return (

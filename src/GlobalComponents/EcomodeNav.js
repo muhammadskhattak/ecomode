@@ -32,16 +32,22 @@ export default class EcomodeNav extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="mx-auto" navbar>
                 <NavItem>
-                  <NavLink href="/about">About Us</NavLink>
+                  <NavLink href="/about">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/signup">Sign Up</NavLink>
+                  <NavLink href="/signup">Join</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/strategy">Business Strategy</NavLink>
+                  <NavLink href="/events">Events</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/tickets">Buying Tickets</NavLink>
+                  <NavLink href="/partners">Partners</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/products">Our Products</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/team">Team</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
