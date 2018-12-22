@@ -100,14 +100,14 @@
 
   .CardTitle {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: #1e1e1e;
     padding: 0.5em;
   }
 
   .CardSubtitle {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 18px;
     padding: 0.75em;
     color: #6b6b6b;
   }
@@ -121,7 +121,7 @@
   
   .CardButton {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 18px;
     border: none;
     background-color: #DCDCDC;
     color: #6b6b6b;
