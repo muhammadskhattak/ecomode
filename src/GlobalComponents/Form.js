@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Container, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Alert, Container, Col, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { withRouter } from 'react-router-dom';
 import '../Stylesheets/Card.css';
 
 class EcomodeForm extends Component{
+    constructor(props){
+        super(props);
+        this.dismissAlert = this.dismissAlert.bind(this);
+        this.fireAlert = this.fireAlert.bind(this);
+    }
 
     state = {
         firstname:'',
         lastname:'',
-        email:''
+        email:'',
+        alertVisible:false,
     }
 
     handleFirstNameEdit = event => {
@@ -31,11 +38,24 @@ class EcomodeForm extends Component{
             email: this.state.email
         };
 
-        axios.get(`https://script.google.com/macros/s/AKfycbxgPAWdcg81X-Ny3VJuIUF_jLinxZ6xiFOobiU81czWMzpn_ZPX/exec?firstname=${person.firstname}&lastname=${person.lastname}&email=${person.email}`, { person })
-        .then(res => {
-            console.log(res);
-            console.log(res.data);
-        });
+        if (person.firstname && person.lastname && person.email){
+            axios.get(`https://script.google.com/macros/s/AKfycbxgPAWdcg81X-Ny3VJuIUF_jLinxZ6xiFOobiU81czWMzpn_ZPX/exec?firstname=${person.firstname}&lastname=${person.lastname}&email=${person.email}`, { person })
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+                this.props.history.push('/home');
+            });
+        } else {
+            this.fireAlert();
+        }
+    }
+
+    fireAlert = () => {
+        this.setState({alertVisible: true});
+    }
+
+    dismissAlert = () => {
+        this.setState({alertVisible: false});
     }
 
     render = () => {
@@ -44,6 +64,7 @@ class EcomodeForm extends Component{
             <Container  className='container'>
             <h2 style={{fontFamily:"Arial"}}>Sign Up</h2>
             <p style={{fontFamily:"Arial"}}>Signing up will add you to our mailing list</p>
+            
             <Form id="test-form" onSubmit={this.handleSubmit}>
             <Col>
                 <FormGroup>
@@ -81,6 +102,9 @@ class EcomodeForm extends Component{
                 />
                 </FormGroup>
             </Col>
+            <Alert color="dark" isOpen={this.state.alertVisible} toggle={this.dismissAlert}>
+                Invalid input! Check that you have filled out all fields!
+            </Alert>
             <Button className="button" type="submit" id="submit-form">Submit</Button>
             <div style={{padding:'10px'}}></div>
             </Form>
@@ -90,4 +114,4 @@ class EcomodeForm extends Component{
     }
 }
 
-export default EcomodeForm;
+export default withRouter(EcomodeForm);
